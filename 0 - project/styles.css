@@ -1,0 +1,53 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif; /* Use the font specified in style-guide.md */
+    background-color: hsl(212, 45%, 89%); /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* QR code container */
+  .qr-code-container {
+    background-color: hsl(0, 0%, 100%); /* White */
+    border-radius: 20px;
+    padding: 16px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* QR code image */
+  .qr-code-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading */
+  .qr-code-container h1 {
+    color: hsl(218, 44%, 22%); /* Dark blue */
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  
+  /* Paragraph */
+  .qr-code-container p {
+    color: hsl(220, 15%, 55%); /* Grayish blue */
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 375px) {
+    .qr-code-container {
+      margin: 0 24px;
+    }
+  }
